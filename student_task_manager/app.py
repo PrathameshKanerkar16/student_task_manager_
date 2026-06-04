@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request, redirect, session
 
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
 from db_config import get_database_connection
 #create flask aaplication
 app = Flask(__name__)
